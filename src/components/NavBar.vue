@@ -54,5 +54,53 @@ export default class NavBar extends Vue {}
   }
 }
 
+/*
+  Device = Tablets, Ipads
+  Screen = B/w 768px to 1024px
+*/
+@media (max-width: 1024px) {
+  .header {
+  .logo {
+    font-size: 2rem;
+  }
 
+  .search-bar {
+    width: 40%;
+
+    .search-icon {
+      width: 25px;
+      height: 25px;
+    }
+    input {
+      height: 40px;
+      font-size: 1.1rem;
+    }
+  }
+}
+}
+
+/*
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+@media (max-width: 480px) {
+  .header {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    width: 50%;
+
+    .search-icon {
+      width: 15px;
+      height: 15px;
+    }
+    input {
+      height: 30px;
+      font-size: 1rem;
+    }
+  }
+}
+}
 </style>

@@ -460,5 +460,124 @@ body {
   }
 }
 
+/*
+  Device = Tablets, Ipads
+  Screen = B/w 768px to 1024px
+*/
+@media (max-width: 1024px) {
+  .homepage {
+  margin: 20px;
 
+  .main-content {
+    margin-top: 30px;
+
+    &-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 20px;
+
+      .cover {
+        width: 65%;
+      }
+
+      .text {
+        margin-left: 0;
+        margin-top: 10px;
+
+        .title {
+          font-size: 2.2rem;
+        }
+
+        .category {
+          font-size: 1.1rem;
+        }
+
+        .price-rate {
+          display: flex;
+
+          .price {
+            font-size: 1.4rem;
+
+            span {
+              font-size: 1.9rem;
+            }
+          }
+
+          .rate {
+            font-size: 1.6rem;
+
+            .votes {
+              font-size: 1.4rem;
+            }
+          }
+        }
+        .description {
+          font-size: 1.3rem;
+          line-height: 2.1rem;
+        }
+      }
+    }
+  }
+}
+}
+
+/*
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+@media (max-width: 480px) {
+    .homepage {
+  margin: 10px;
+
+  .main-content {
+    &-details {
+      margin: 0 10px;
+      margin-top: 200px;
+
+      .cover {
+        width: 100%;
+      }
+
+      .text {
+        .title {
+          font-size: 1.7rem;
+        }
+
+        .category {
+          font-size: .9rem;
+        }
+
+        .price-rate {
+          .price {
+            font-size: 1rem;
+
+            span {
+              font-size: 1rem;
+            }
+          }
+
+          .rate {
+            font-size: 1rem;
+
+            .votes {
+              font-size: .9rem;
+            }
+          }
+        }
+        .description {
+          margin-top: 15px;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+
+    &-list {
+      position: absolute;
+      top: 50px;
+    }
+  }
+}
+}
 </style>
