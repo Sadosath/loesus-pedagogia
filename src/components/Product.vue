@@ -1,5 +1,5 @@
 <template>
-  <img src="../assets/product.jpg" alt="" class="product" />
+  <img :src="data?.image" alt="" class="product" />
 </template>
 
 <script lang="ts">
